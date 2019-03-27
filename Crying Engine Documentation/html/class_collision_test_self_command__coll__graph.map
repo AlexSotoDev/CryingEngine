@@ -1,0 +1,6 @@
+<map id="CollisionTestSelfCommand&lt; C1 &gt;" name="CollisionTestSelfCommand&lt; C1 &gt;">
+<area shape="rect" id="node2" href="$class_command_base.html" title="A base class for all derived command classes to inherit from. Has a virtual execute function for over..." alt="" coords="5,469,144,605"/>
+<area shape="rect" id="node3" href="$class_collidable_group.html" title="{CollidableGroup\&lt; C1 \&gt;\n||+ CollidableGroup()\l+ CollidableGroup()\l+ operator=()\l+ ~CollidableGroup()\l+ Instance()\l+ GetColliderCollection()\l+ Register()\l+ Deregister()\l&#45; privRegister()\l&#45; privDeregister()\l}" alt="" coords="168,432,331,641"/>
+<area shape="rect" id="node4" href="$class_collidable_group_base.html" title="A collidable group base class serving to completely isolate/minimize the templatization of collision ..." alt="" coords="45,5,216,97"/>
+<area shape="rect" id="node5" href="$class_collidable_group.html" title="Singleton manager through templated collidable group class created so that we can use the collision s..." alt="" coords="168,160,331,369"/>
+</map>

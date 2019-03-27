@@ -1,0 +1,9 @@
+<map id="Alarmable" name="Alarmable">
+<area shape="rect" id="node7" href="$class_alarm_registration_command.html" title="{AlarmRegistrationCommand\n|&#45; currentAlarmID\l|+ AlarmRegistrationCommand()\l+ AlarmRegistrationCommand()\l+ operator=()\l+ ~AlarmRegistrationCommand()\l+ Execute()\l}" alt="" coords="530,1021,742,1157"/>
+<area shape="rect" id="node9" href="$class_alarm_deregistration_command.html" title="{AlarmDeregistrationCommand\n|&#45; currentAlarmID\l|+ AlarmDeregistrationCommand()\l+ AlarmDeregistrationCommand()\l+ operator=()\l+ ~AlarmDeregistrationCommand()\l+ Execute()\l}" alt="" coords="171,1021,394,1157"/>
+<area shape="rect" id="node2" href="$class_game_object.html" title="{GameObject\n|&#45; currentState\l|+ GameObject()\l+ ~GameObject()\l+ GameObject()\l+ operator=()\l+ SubmitEntry()\l+ SubmitExit()\l&#45; ConnectToScene()\l&#45; DisconnectFromScene()\l&#45; SceneEntry()\l&#45; SceneExit()\l}" alt="" coords="257,389,428,599"/>
+<area shape="rect" id="node3" href="$class_game_object_entry_command.html" title="{GameObjectEntryCommand\n||+ GameObjectEntryCommand()\l+ GameObjectEntryCommand()\l+ operator=()\l+ ~GameObjectEntryCommand()\l+ Execute()\l}" alt="" coords="257,191,471,327"/>
+<area shape="rect" id="node5" href="$class_game_object_exit_command.html" title="{GameObjectExitCommand\n||+ GameObjectExitCommand()\l+ GameObjectExitCommand()\l+ operator=()\l+ ~GameObjectExitCommand()\l+ Execute()\l}" alt="" coords="172,742,377,878"/>
+<area shape="rect" id="node4" href="$class_command_base.html" title="A base class for all derived command classes to inherit from. Has a virtual execute function for over..." alt="" coords="195,5,333,141"/>
+<area shape="rect" id="node6" href="$struct_alarmable_1_1_registration_data.html" title="{Alarmable::RegistrationData\n|+ currentState\l+ myAlarmID\l+ time\l|}" alt="" coords="269,1220,453,1327"/>
+</map>

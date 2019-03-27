@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Engine\CryingEngine.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ModelManager.cpp">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ShaderManager.cpp">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TextureManager.cpp">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CameraManager.cpp">
+      <Filter>Engine\Camera Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Collidable.cpp">
+      <Filter>Engine\Collision\Collidable</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollidableDeregistrationCommand.cpp">
+      <Filter>Engine\Collision\Collidable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollidableRegistrationCommand.cpp">
+      <Filter>Engine\Collision\Collidable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionManager.cpp">
+      <Filter>Engine\Collision\Collidable Registration\Collision Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionVolumeBSphere.cpp">
+      <Filter>Engine\Collision\Collision Volume\B Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionVolume.cpp">
+      <Filter>Engine\Collision\Collision Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Visualizer.cpp">
+      <Filter>Engine\Collision\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CommandBase.cpp">
+      <Filter>Engine\Command Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AlarmDeregistrationCommand.cpp">
+      <Filter>Engine\Game Object\Alarm\Alarmable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AlarmRegistrationCommand.cpp">
+      <Filter>Engine\Game Object\Alarm\Alarmable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DrawableManager.cpp">
+      <Filter>Engine\Game Object\Draw\Drawable Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DrawDeregistrationCommand.cpp">
+      <Filter>Engine\Game Object\Draw\Drawable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DrawRegistrationCommand.cpp">
+      <Filter>Engine\Game Object\Draw\Drawable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObjectEntryCommand.cpp">
+      <Filter>Engine\Game Object\Game Object Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObjectExitCommand.cpp">
+      <Filter>Engine\Game Object\Game Object Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\InputableManager.cpp">
+      <Filter>Engine\Game Object\Input\Inputable Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\KeyEventDeregistrationCommand.cpp">
+      <Filter>Engine\Game Object\Input\Inputable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\KeyEventRegistrationcommand.cpp">
+      <Filter>Engine\Game Object\Input\Inputable Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\KeyObject.cpp">
+      <Filter>Engine\Game Object\Input\Key Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\UpdatableManager.cpp">
+      <Filter>Engine\Game Object\Update\Updatable Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\UpdateDeregistrationCommand.cpp">
+      <Filter>Engine\Game Object\Update\Update Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\UpdateRegistrationCommand.cpp">
+      <Filter>Engine\Game Object\Update\Update Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Updatable.cpp">
+      <Filter>Engine\Game Object\Update</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject.cpp">
+      <Filter>Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\MathTools.cpp">
+      <Filter>Engine\Math Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GodCamera.cpp">
+      <Filter>Engine\God Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\NullScene.cpp">
+      <Filter>Engine\Scene\NullScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\SceneManager.cpp">
+      <Filter>Engine\Scene\Scene Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\SceneRegistrationBroker.cpp">
+      <Filter>Engine\Scene\Scene Registration Broker</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scene.cpp">
+      <Filter>Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FreezeTime.cpp">
+      <Filter>Engine\Time Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TimeManager.cpp">
+      <Filter>Engine\Time Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="User\BulletFactory.cpp">
+      <Filter>User\Demo\Bullet Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="User\EnemySpawner.cpp">
+      <Filter>User\Demo\Game Objects\Enemy\Enemy Spawner</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Enemy.cpp">
+      <Filter>User\Demo\Game Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Axis.cpp">
+      <Filter>User\Demo\Game Objects\Environment\Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Plane.cpp">
+      <Filter>User\Demo\Game Objects\Environment\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Bullet.cpp">
+      <Filter>User\Demo\Game Objects\Player\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Frigate.cpp">
+      <Filter>User\Demo\Game Objects\Player\Frigate</Filter>
+    </ClCompile>
+    <ClCompile Include="User\GameInitialize.cpp">
+      <Filter>User\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="User\LoadAllResources.cpp">
+      <Filter>User\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ImageManager.cpp">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sprite.cpp">
+      <Filter>Engine\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="User\TestSpriteObject.cpp">
+      <Filter>User\Demo\Game Objects\Sprite Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Alarmable.cpp">
+      <Filter>Engine\Game Object\Alarm\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AlarmableManager.cpp">
+      <Filter>Engine\Game Object\Alarm\Alarmable Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Drawable.cpp">
+      <Filter>Engine\Game Object\Draw\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Inputable.cpp">
+      <Filter>Engine\Game Object\Input\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Cottage.cpp">
+      <Filter>User\Demo\Game Objects\Environment\Cottage</Filter>
+    </ClCompile>
+    <ClCompile Include="User\EnemyBullet.cpp">
+      <Filter>User\Demo\Game Objects\Enemy\Enemy Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="User\EnemyBulletFactory.cpp">
+      <Filter>User\Demo\Game Objects\Enemy\Enemy Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="User\SpriteHeart.cpp">
+      <Filter>User\Demo\Game Objects\Sprite Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionVolumeAABB.cpp">
+      <Filter>Engine\Collision\Collision Volume\AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="User\DemoScene.cpp">
+      <Filter>User\Demo\Scenes\Demo Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="User\IntroScene.cpp">
+      <Filter>User\Demo\Scenes\Intro Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="User\EndScene.cpp">
+      <Filter>User\Demo\Scenes\End Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="User\SpriteBackground.cpp">
+      <Filter>User\Demo\Game Objects\Sprite Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionVolumeOBB.cpp">
+      <Filter>Engine\Collision\Collision Volume\OBB</Filter>
+    </ClCompile>
+    <ClCompile Include="User\DemoScene2.cpp">
+      <Filter>User\Demo\Scenes\Demo Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TerrainObject.cpp">
+      <Filter>Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TerrainObjectManager.cpp">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TerrainManager.cpp">
+      <Filter>Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\NullTerrainObject.cpp">
+      <Filter>Engine\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\SoundEngine.cpp">
+      <Filter>Engine\Sound %28FMOD%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{1392bc0c-ded2-42a7-9ec1-333be4dadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{aef3393e-06a5-4f08-bf4a-3b6be12d1e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{d22a518f-dd11-48ea-8247-bd82c5928233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{f1613e77-99f1-482b-bccf-12b6784f3aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{c350b52d-8efa-4eca-a258-d57d45c43245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{189a2178-2765-49df-b052-8eca24a60d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{841af908-0674-4949-8aa0-292e3e84a88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{d2f5d78b-d9cf-4bd9-bd4e-df7522de593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{fb44cdb2-f236-4b3b-833e-e9e2c3af59cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{23abe339-ce80-4523-b0f0-23747e3f512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{323b20aa-e08c-4260-84b1-1e85121a9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{9fcc2c9b-3e4f-4ab2-a0c5-3099cdf90300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{ea7cbe8f-1aeb-4ad2-bd4e-fa300408bd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{5d126765-1977-4213-89fb-e004f6468da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{d3f91089-c7e6-474d-8376-afd372d35a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{8a854cfc-9294-4797-b476-0b2feacdd62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{60eabb98-a714-4df4-8fa1-3fb92ea55bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{d49f539d-9cd3-4a7c-8147-743e5a4d7616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Camera Manager">
+      <UniqueIdentifier>{637dc8f7-27af-4a85-91fc-e6c364096f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object">
+      <UniqueIdentifier>{370441fb-0a6b-40f8-93b4-ad843baae7bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User">
+      <UniqueIdentifier>{0c48099e-d657-42fa-8b06-f46b4635abbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Draw">
+      <UniqueIdentifier>{998f5b5c-0328-409c-b1eb-e6ef7e01f68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Update">
+      <UniqueIdentifier>{bb153cec-47a6-4a56-83b9-5f98e70c5cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Asset Managers">
+      <UniqueIdentifier>{a391fb39-fa66-4b95-9f55-7f933ba4258b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene">
+      <UniqueIdentifier>{467a2756-b3ff-4947-ad62-61fdec5333cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\Scene Manager">
+      <UniqueIdentifier>{5e496766-5e26-4cd1-8bac-95d7d66cf210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Initialization">
+      <UniqueIdentifier>{3a6e8653-ffb4-41f4-9bd9-5b0b8491aa12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo">
+      <UniqueIdentifier>{d6ea9168-1038-4d3f-9b63-10d53570e423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Draw\Drawable Manager">
+      <UniqueIdentifier>{f5c7ba3e-9ce5-43f4-9b1a-da796e79393c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Update\Updatable Manager">
+      <UniqueIdentifier>{d2be6372-e206-4ba8-95f4-05770946ac4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Alarm">
+      <UniqueIdentifier>{fe84e70b-6e9c-45f1-91ee-741ee974b7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Draw\Drawable Registration">
+      <UniqueIdentifier>{831ce98b-7927-4d38-99d6-61e9ca0dcf99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Update\Update Registration">
+      <UniqueIdentifier>{563fec94-ade3-40fa-ba0f-5deb20143513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Command Base">
+      <UniqueIdentifier>{3f69ce3e-47c4-4bd7-9a59-bf2f68a80071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\Scene Registration Broker">
+      <UniqueIdentifier>{4564e01c-e914-4325-9240-8e10ea8cc18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Alarm\Alarmable Registration">
+      <UniqueIdentifier>{6a6e9f6c-117f-4be7-9cb6-4cd472c76c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Game Object Command">
+      <UniqueIdentifier>{957dabc5-135d-4b75-885f-c985fb8cd283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Time Manager">
+      <UniqueIdentifier>{ab61fe96-47fa-4295-835e-05f50927b13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Reg State">
+      <UniqueIdentifier>{84a76db7-fd2e-4117-95e9-102db11e030a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\NullScene">
+      <UniqueIdentifier>{498141ba-8361-4bf1-8d63-20ccb350b27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision">
+      <UniqueIdentifier>{aa560fe6-3d4e-4e75-b049-f9839b874e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collidable Registration">
+      <UniqueIdentifier>{016a799f-f9a1-455b-a99d-fe9ade6a245e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collidable Group">
+      <UniqueIdentifier>{c39372be-26a8-4679-ae5f-2063d07e5566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collidable">
+      <UniqueIdentifier>{dadf14f9-c3bd-4a15-a509-6f72d46b75d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collision Test Commands">
+      <UniqueIdentifier>{e5b993f2-4843-4704-8825-246e0f1fba78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collidable Group\Collidable Group">
+      <UniqueIdentifier>{f660bb39-2374-4617-8f28-ce13b2b59fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collidable Group\Collidable Group Base">
+      <UniqueIdentifier>{36395a61-eb4d-427a-a1c7-f78e8dbb9c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Visualizer">
+      <UniqueIdentifier>{70f061f7-1086-423a-baa6-dba21992b620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collision Volume">
+      <UniqueIdentifier>{6ee2925a-6512-48f2-87b4-1f5b9785ed89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collision Volume\B Sphere">
+      <UniqueIdentifier>{37528d71-d476-4abc-a139-eae7fbe7d606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collision Volume\ColorLibrary">
+      <UniqueIdentifier>{4eb6f3c0-d826-4d8a-b12f-3d3261b944a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Math Tools">
+      <UniqueIdentifier>{9f1dcd74-da2f-4803-a14b-ba16c6a67c5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\God Camera">
+      <UniqueIdentifier>{c3627cce-84e0-4df3-9e4e-85fc3810372f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Bullet Factory">
+      <UniqueIdentifier>{269e0877-b681-4d04-bee1-466e0e97c7e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects">
+      <UniqueIdentifier>{262815de-99e3-4da9-b0bc-8b758cd6ff9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Environment">
+      <UniqueIdentifier>{d44b9174-a4d3-43fb-a298-faa2dbe56c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Environment\Axis">
+      <UniqueIdentifier>{45de08b1-1cda-426f-a7e8-ca18d261afd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Environment\Plane">
+      <UniqueIdentifier>{23beef2d-a591-40ce-bc09-46f772c82e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Player">
+      <UniqueIdentifier>{eca68435-092a-4e05-9bf6-b171eecfa222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Player\Frigate">
+      <UniqueIdentifier>{173ad216-02ec-489e-802c-3775599be484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Player\Bullet">
+      <UniqueIdentifier>{e3affe96-523f-42a0-90c0-6436d6936674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Enemy">
+      <UniqueIdentifier>{b6646caf-9348-4da4-bd5c-c8c90cf265f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Enemy\Enemy Spawner">
+      <UniqueIdentifier>{56fdd4b4-47b1-49f2-b4c8-aeac1d0a779a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Sprite">
+      <UniqueIdentifier>{8aa00ff5-2e06-4c64-b8b8-689b461b3fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Sprite Object">
+      <UniqueIdentifier>{b956cd3b-b6da-4d5e-acb1-49c9178a5112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Doxygen Header">
+      <UniqueIdentifier>{47560d52-6a5d-417e-ba1b-a624d3a9f548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Alarm\Alarmable">
+      <UniqueIdentifier>{2b5d1f6b-124e-4207-ade0-8aaedfa8e5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Alarm\Alarmable Manager">
+      <UniqueIdentifier>{1913cede-5496-4c35-93ad-90048c1f20cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Draw\Drawable">
+      <UniqueIdentifier>{25df2359-07fb-4f64-9db3-fbdc11efdb80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Input">
+      <UniqueIdentifier>{b7a054be-b0ee-47c4-9548-360cf6a35bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Input\Inputable Manager">
+      <UniqueIdentifier>{b23ef9cd-0346-474e-ab26-9ebf4f258810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Input\Key Object">
+      <UniqueIdentifier>{3e8957ac-7e05-42ee-808e-0c0ba37534ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Input\Inputable Registration">
+      <UniqueIdentifier>{09a38251-dafb-416d-9f42-4c86211bb2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game Object\Input\Inputable">
+      <UniqueIdentifier>{dc7b090a-e21a-414f-929e-c4a05b25616e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Environment\Cottage">
+      <UniqueIdentifier>{a821b39c-5fcb-44fb-99ab-852a573c31aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Game Objects\Enemy\Enemy Bullet">
+      <UniqueIdentifier>{5121cb56-a08a-4681-8f3a-3fcc6395cc33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Class Diagram">
+      <UniqueIdentifier>{cd1d4e0e-3ca2-4aae-a8da-967f0c26906a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collision Volume\AABB">
+      <UniqueIdentifier>{7ae04e44-04d9-4c94-b885-3b0b6b54fc60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Scenes">
+      <UniqueIdentifier>{e92a1d44-d38b-4123-843e-842575a5b11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Scenes\Demo Scene">
+      <UniqueIdentifier>{c53f9248-17dc-4d63-bcfe-7b11bc36cbcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Scenes\Intro Scene">
+      <UniqueIdentifier>{95710d6b-9e97-47ad-bbff-e1ba3af420e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Demo\Scenes\End Scene">
+      <UniqueIdentifier>{c4045d74-ceea-4b37-aaa7-d8f1a998c3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collision Volume\OBB">
+      <UniqueIdentifier>{808d6021-50c5-494f-84f8-6927e951c99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Terrain">
+      <UniqueIdentifier>{efff195c-2f7d-4d4c-8dc7-3b83ee2aac93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collision\Collidable Registration\Collision Manager">
+      <UniqueIdentifier>{42e50331-1455-4212-b892-3a7e7594060a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Sound %28FMOD%29">
+      <UniqueIdentifier>{492e23af-9af0-4e6d-9000-da9d84d03c3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CryingEngine.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ModelManager.h">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ShaderManager.h">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TextureManager.h">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CameraManager.h">
+      <Filter>Engine\Camera Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Collidable.h">
+      <Filter>Engine\Collision\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollidableGroup.h">
+      <Filter>Engine\Collision\Collidable Group\Collidable Group</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollidableGroupBase.h">
+      <Filter>Engine\Collision\Collidable Group\Collidable Group Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollidableDeregistrationCommand.h">
+      <Filter>Engine\Collision\Collidable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollidableRegistrationCommand.h">
+      <Filter>Engine\Collision\Collidable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionManager.h">
+      <Filter>Engine\Collision\Collidable Registration\Collision Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionTestPairCommand.h">
+      <Filter>Engine\Collision\Collision Test Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionTestSelfCommand.h">
+      <Filter>Engine\Collision\Collision Test Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionVolumeBSphere.h">
+      <Filter>Engine\Collision\Collision Volume\B Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ColorLibrary.h">
+      <Filter>Engine\Collision\Collision Volume\ColorLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionVolume.h">
+      <Filter>Engine\Collision\Collision Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Visualizer.h">
+      <Filter>Engine\Collision\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CommandBase.h">
+      <Filter>Engine\Command Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AlarmDeregistrationCommand.h">
+      <Filter>Engine\Game Object\Alarm\Alarmable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AlarmRegistrationCommand.h">
+      <Filter>Engine\Game Object\Alarm\Alarmable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EnumAlarm.h">
+      <Filter>Engine\Game Object\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DrawableManager.h">
+      <Filter>Engine\Game Object\Draw\Drawable Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DrawDeregistrationCommand.h">
+      <Filter>Engine\Game Object\Draw\Drawable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DrawRegistrationCommand.h">
+      <Filter>Engine\Game Object\Draw\Drawable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObjectEntryCommand.h">
+      <Filter>Engine\Game Object\Game Object Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObjectExitCommand.h">
+      <Filter>Engine\Game Object\Game Object Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\InputableManager.h">
+      <Filter>Engine\Game Object\Input\Inputable Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\KeyEventDeregistrationCommand.h">
+      <Filter>Engine\Game Object\Input\Inputable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\KeyEventRegistrationCommand.h">
+      <Filter>Engine\Game Object\Input\Inputable Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\KeyObject.h">
+      <Filter>Engine\Game Object\Input\Key Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EnumEventType.h">
+      <Filter>Engine\Game Object\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EnumRegistrationState.h">
+      <Filter>Engine\Game Object\Reg State</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\UpdatableManager.h">
+      <Filter>Engine\Game Object\Update\Updatable Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\UpdateDeregistrationCommand.h">
+      <Filter>Engine\Game Object\Update\Update Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\UpdateRegistrationCommand.h">
+      <Filter>Engine\Game Object\Update\Update Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Updatable.h">
+      <Filter>Engine\Game Object\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject.h">
+      <Filter>Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\MathTools.h">
+      <Filter>Engine\Math Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GodCamera.h">
+      <Filter>Engine\God Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\NullScene.h">
+      <Filter>Engine\Scene\NullScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\SceneManager.h">
+      <Filter>Engine\Scene\Scene Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\SceneRegistrationBroker.h">
+      <Filter>Engine\Scene\Scene Registration Broker</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scene.h">
+      <Filter>Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FreezeTime.h">
+      <Filter>Engine\Time Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TimeManager.h">
+      <Filter>Engine\Time Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="User\BulletFactory.h">
+      <Filter>User\Demo\Bullet Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="User\EnemySpawner.h">
+      <Filter>User\Demo\Game Objects\Enemy\Enemy Spawner</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Enemy.h">
+      <Filter>User\Demo\Game Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Axis.h">
+      <Filter>User\Demo\Game Objects\Environment\Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Plane.h">
+      <Filter>User\Demo\Game Objects\Environment\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Bullet.h">
+      <Filter>User\Demo\Game Objects\Player\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Frigate.h">
+      <Filter>User\Demo\Game Objects\Player\Frigate</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ImageManager.h">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sprite.h">
+      <Filter>Engine\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="User\TestSpriteObject.h">
+      <Filter>User\Demo\Game Objects\Sprite Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EnumAngleMeasureType.h">
+      <Filter>Engine\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DoxygenHeader.h">
+      <Filter>Engine\Doxygen Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Alarmable.h">
+      <Filter>Engine\Game Object\Alarm\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AlarmableManager.h">
+      <Filter>Engine\Game Object\Alarm\Alarmable Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Drawable.h">
+      <Filter>Engine\Game Object\Draw\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Inputable.h">
+      <Filter>Engine\Game Object\Input\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Cottage.h">
+      <Filter>User\Demo\Game Objects\Environment\Cottage</Filter>
+    </ClInclude>
+    <ClInclude Include="User\EnemyBullet.h">
+      <Filter>User\Demo\Game Objects\Enemy\Enemy Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="User\EnemyBulletFactory.h">
+      <Filter>User\Demo\Game Objects\Enemy\Enemy Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="User\SpriteHeart.h">
+      <Filter>User\Demo\Game Objects\Sprite Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EnumCollisionVolumeType.h">
+      <Filter>Engine\Collision\Collision Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionVolumeAABB.h">
+      <Filter>Engine\Collision\Collision Volume\AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="User\DemoScene.h">
+      <Filter>User\Demo\Scenes\Demo Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="User\IntroScene.h">
+      <Filter>User\Demo\Scenes\Intro Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="User\EndScene.h">
+      <Filter>User\Demo\Scenes\End Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="User\SpriteBackground.h">
+      <Filter>User\Demo\Game Objects\Sprite Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionVolumeOBB.h">
+      <Filter>Engine\Collision\Collision Volume\OBB</Filter>
+    </ClInclude>
+    <ClInclude Include="User\DemoScene2.h">
+      <Filter>User\Demo\Scenes\Demo Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TerrainObject.h">
+      <Filter>Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TerrainObjectManager.h">
+      <Filter>Engine\Asset Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TerrainManager.h">
+      <Filter>Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\NullTerrainObject.h">
+      <Filter>Engine\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TerrainCollisionCommand.h">
+      <Filter>Engine\Collision\Collision Test Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\SoundEngine.h">
+      <Filter>Engine\Sound %28FMOD%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\SoundModeEnum.h">
+      <Filter>Engine\Sound %28FMOD%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Engine\Class Diagram</Filter>
+    </None>
+  </ItemGroup>
+</Project>

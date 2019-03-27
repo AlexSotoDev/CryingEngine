@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_collision_volume.html" title="A collision volume. Base collision volume all collision volumes inherit from for smooth collision tes..." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node2" href="$class_collision_volume_b_sphere.html" title="A collision volume b sphere constructed using a model and a matrix to place the model at the world or..." alt="" coords="168,5,333,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CollisionManager" name="CollisionManager">
+<area shape="rect" id="node3" href="$class_command_base.html" title="A base class for all derived command classes to inherit from. Has a virtual execute function for over..." alt="" coords="27,5,166,141"/>
+<area shape="rect" id="node5" href="$class_collidable_group_base.html" title="A collidable group base class serving to completely isolate/minimize the templatization of collision ..." alt="" coords="211,27,382,119"/>
+</map>

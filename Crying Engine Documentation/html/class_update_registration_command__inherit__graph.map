@@ -1,0 +1,3 @@
+<map id="UpdateRegistrationCommand" name="UpdateRegistrationCommand">
+<area shape="rect" id="node2" href="$class_command_base.html" title="A base class for all derived command classes to inherit from. Has a virtual execute function for over..." alt="" coords="45,5,184,141"/>
+</map>

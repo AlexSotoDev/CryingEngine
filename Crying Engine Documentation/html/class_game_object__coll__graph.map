@@ -1,0 +1,5 @@
+<map id="GameObject" name="GameObject">
+<area shape="rect" id="node2" href="$class_game_object_entry_command.html" title="{GameObjectEntryCommand\n||+ GameObjectEntryCommand()\l+ GameObjectEntryCommand()\l+ operator=()\l+ ~GameObjectEntryCommand()\l+ Execute()\l}" alt="" coords="340,277,553,413"/>
+<area shape="rect" id="node4" href="$class_game_object_exit_command.html" title="{GameObjectExitCommand\n||+ GameObjectExitCommand()\l+ GameObjectExitCommand()\l+ operator=()\l+ ~GameObjectExitCommand()\l+ Execute()\l}" alt="" coords="5,277,211,413"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title="A base class for all derived command classes to inherit from. Has a virtual execute function for over..." alt="" coords="457,42,596,178"/>
+</map>

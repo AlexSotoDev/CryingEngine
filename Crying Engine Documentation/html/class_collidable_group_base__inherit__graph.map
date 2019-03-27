@@ -1,0 +1,5 @@
+<map id="CollidableGroupBase" name="CollidableGroupBase">
+<area shape="rect" id="node2" href="$class_collidable_group.html" title="Singleton manager through templated collidable group class created so that we can use the collision s..." alt="" coords="5,145,168,369"/>
+<area shape="rect" id="node3" href="$class_collidable_group.html" title="{CollidableGroup\&lt; C1 \&gt;\n|+ collideCol\l+ self\l|+ CollidableGroup()\l+ CollidableGroup()\l+ operator=()\l+ ~CollidableGroup()\l+ Instance()\l+ GetColliderCollection()\l+ Register()\l+ Deregister()\l&#45; privRegister()\l&#45; privDeregister()\l}" alt="" coords="192,145,355,369"/>
+<area shape="rect" id="node4" href="$class_collidable_group.html" title="{CollidableGroup\&lt; C2 \&gt;\n|+ collideCol\l+ self\l|+ CollidableGroup()\l+ CollidableGroup()\l+ operator=()\l+ ~CollidableGroup()\l+ Instance()\l+ GetColliderCollection()\l+ Register()\l+ Deregister()\l&#45; privRegister()\l&#45; privDeregister()\l}" alt="" coords="379,145,541,369"/>
+</map>

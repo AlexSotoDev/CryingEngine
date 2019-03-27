@@ -1,0 +1,3 @@
+<map id="Drawable" name="Drawable">
+<area shape="rect" id="node2" href="$class_game_object.html" title="{GameObject\n|&#45; currentState\l&#45; registrationCommand\l&#45; deregistrationCommand\l|+ GameObject()\l+ ~GameObject()\l+ GameObject()\l+ operator=()\l+ SubmitEntry()\l+ SubmitExit()\l&#45; ConnectToScene()\l&#45; DisconnectFromScene()\l&#45; SceneEntry()\l&#45; SceneExit()\l}" alt="" coords="16,5,187,244"/>
+</map>

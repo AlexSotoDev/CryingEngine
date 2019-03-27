@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3167A812-5D2C-4EE9-ACFD-F0E959384755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spinnycube</RootNamespace>
+    <ProjectName>CryingEngine</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)dist\FMod\inc;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(SolutionDir)dist\FMod\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include;$(SolutionDir)dist\FMod\inc</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>4505</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkStatus>
+      </LinkStatus>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;fmod_vc.lib;fmodL_vc.lib;fmodstudio_vc.lib;fmodstudioL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\TerrainObject.cpp" />
+    <ClCompile Include="Engine\TerrainObjectManager.cpp" />
+    <ClCompile Include="Engine\TerrainManager.cpp" />
+    <ClCompile Include="Engine\NullTerrainObject.cpp" />
+    <ClCompile Include="Engine\SoundEngine.cpp" />
+    <ClCompile Include="User\DemoScene2.cpp" />
+    <ClCompile Include="Engine\CollisionVolumeOBB.cpp" />
+    <ClCompile Include="User\SpriteBackground.cpp" />
+    <ClCompile Include="User\EndScene.cpp" />
+    <ClCompile Include="Engine\CollisionVolumeAABB.cpp" />
+    <ClCompile Include="User\IntroScene.cpp" />
+    <ClCompile Include="User\SpriteHeart.cpp" />
+    <ClCompile Include="User\EnemyBulletFactory.cpp" />
+    <ClCompile Include="User\EnemyBullet.cpp" />
+    <ClCompile Include="User\Cottage.cpp" />
+    <ClCompile Include="Engine\Alarmable.cpp" />
+    <ClCompile Include="Engine\AlarmableManager.cpp" />
+    <ClCompile Include="Engine\AlarmDeregistrationCommand.cpp" />
+    <ClCompile Include="Engine\AlarmRegistrationCommand.cpp" />
+    <ClCompile Include="Engine\ImageManager.cpp" />
+    <ClCompile Include="Engine\Sprite.cpp" />
+    <ClCompile Include="User\TestSpriteObject.cpp" />
+    <ClCompile Include="User\Axis.cpp" />
+    <ClCompile Include="User\Bullet.cpp" />
+    <ClCompile Include="User\BulletFactory.cpp" />
+    <ClCompile Include="Engine\CameraManager.cpp" />
+    <ClCompile Include="Engine\Collidable.cpp" />
+    <ClCompile Include="Engine\CollidableDeregistrationCommand.cpp" />
+    <ClCompile Include="Engine\CollidableRegistrationCommand.cpp" />
+    <ClCompile Include="Engine\CollisionManager.cpp" />
+    <ClCompile Include="Engine\CollisionVolume.cpp" />
+    <ClCompile Include="Engine\CollisionVolumeBSphere.cpp" />
+    <ClCompile Include="Engine\CommandBase.cpp" />
+    <ClCompile Include="Engine\CryingEngine.cpp" />
+    <ClCompile Include="User\DemoScene.cpp" />
+    <ClCompile Include="Engine\Drawable.cpp" />
+    <ClCompile Include="Engine\DrawableManager.cpp" />
+    <ClCompile Include="Engine\DrawDeregistrationCommand.cpp" />
+    <ClCompile Include="Engine\DrawRegistrationCommand.cpp" />
+    <ClCompile Include="User\Enemy.cpp" />
+    <ClCompile Include="User\EnemySpawner.cpp" />
+    <ClCompile Include="Engine\FreezeTime.cpp" />
+    <ClCompile Include="User\Frigate.cpp" />
+    <ClCompile Include="User\GameInitialize.cpp" />
+    <ClCompile Include="Engine\GameObject.cpp" />
+    <ClCompile Include="Engine\GameObjectEntryCommand.cpp" />
+    <ClCompile Include="Engine\GameObjectExitCommand.cpp" />
+    <ClCompile Include="Engine\GodCamera.cpp" />
+    <ClCompile Include="Engine\Inputable.cpp" />
+    <ClCompile Include="Engine\KeyEventDeregistrationCommand.cpp" />
+    <ClCompile Include="Engine\InputableManager.cpp" />
+    <ClCompile Include="Engine\KeyEventRegistrationcommand.cpp" />
+    <ClCompile Include="Engine\KeyObject.cpp" />
+    <ClCompile Include="User\LoadAllResources.cpp" />
+    <ClCompile Include="Engine\main.cpp" />
+    <ClCompile Include="Engine\MathTools.cpp" />
+    <ClCompile Include="Engine\ModelManager.cpp" />
+    <ClCompile Include="Engine\NullScene.cpp" />
+    <ClCompile Include="User\Plane.cpp" />
+    <ClCompile Include="Engine\Scene.cpp" />
+    <ClCompile Include="Engine\SceneManager.cpp" />
+    <ClCompile Include="Engine\SceneRegistrationBroker.cpp" />
+    <ClCompile Include="Engine\ShaderManager.cpp" />
+    <ClCompile Include="Engine\TextureManager.cpp" />
+    <ClCompile Include="Engine\TimeManager.cpp" />
+    <ClCompile Include="Engine\Updatable.cpp" />
+    <ClCompile Include="Engine\UpdatableManager.cpp" />
+    <ClCompile Include="Engine\UpdateDeregistrationCommand.cpp" />
+    <ClCompile Include="Engine\UpdateRegistrationCommand.cpp" />
+    <ClCompile Include="Engine\Visualizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB6\include\arcball.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h" />
+    <ClInclude Include="..\dist\SB6\include\object.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB6\include\shader.h" />
+    <ClInclude Include="..\dist\SB6\include\vmath.h" />
+    <ClInclude Include="Engine\TerrainCollisionCommand.h" />
+    <ClInclude Include="Engine\TerrainObject.h" />
+    <ClInclude Include="Engine\TerrainObjectManager.h" />
+    <ClInclude Include="Engine\TerrainManager.h" />
+    <ClInclude Include="Engine\NullTerrainObject.h" />
+    <ClInclude Include="Engine\SoundEngine.h" />
+    <ClInclude Include="Engine\SoundModeEnum.h" />
+    <ClInclude Include="User\DemoScene2.h" />
+    <ClInclude Include="Engine\CollisionVolumeOBB.h" />
+    <ClInclude Include="User\SpriteBackground.h" />
+    <ClInclude Include="User\EndScene.h" />
+    <ClInclude Include="Engine\CollisionVolumeAABB.h" />
+    <ClInclude Include="Engine\EnumCollisionVolumeType.h" />
+    <ClInclude Include="User\IntroScene.h" />
+    <ClInclude Include="User\SpriteHeart.h" />
+    <ClInclude Include="User\EnemyBulletFactory.h" />
+    <ClInclude Include="User\EnemyBullet.h" />
+    <ClInclude Include="User\Cottage.h" />
+    <ClInclude Include="Engine\DoxygenHeader.h" />
+    <ClInclude Include="Engine\Alarmable.h" />
+    <ClInclude Include="Engine\AlarmDeregistrationCommand.h" />
+    <ClInclude Include="Engine\AlarmableManager.h" />
+    <ClInclude Include="Engine\Collidable.h" />
+    <ClInclude Include="Engine\CollidableDeregistrationCommand.h" />
+    <ClInclude Include="Engine\CollidableGroup.h" />
+    <ClInclude Include="Engine\CollidableGroupBase.h" />
+    <ClInclude Include="Engine\CollidableRegistrationCommand.h" />
+    <ClInclude Include="Engine\CollisionManager.h" />
+    <ClInclude Include="Engine\CollisionTestPairCommand.h" />
+    <ClInclude Include="Engine\CollisionTestSelfCommand.h" />
+    <ClInclude Include="Engine\CollisionVolume.h" />
+    <ClInclude Include="Engine\CollisionVolumeBSphere.h" />
+    <ClInclude Include="Engine\ColorLibrary.h" />
+    <ClInclude Include="Engine\ImageManager.h" />
+    <ClInclude Include="Engine\Sprite.h" />
+    <ClInclude Include="Engine\EnumAngleMeasureType.h" />
+    <ClInclude Include="User\TestSpriteObject.h" />
+    <ClInclude Include="User\Enemy.h" />
+    <ClInclude Include="User\EnemySpawner.h" />
+    <ClInclude Include="Engine\EnumAlarm.h" />
+    <ClInclude Include="Engine\AlarmRegistrationCommand.h" />
+    <ClInclude Include="User\Axis.h" />
+    <ClInclude Include="User\Bullet.h" />
+    <ClInclude Include="User\BulletFactory.h" />
+    <ClInclude Include="Engine\CameraManager.h" />
+    <ClInclude Include="Engine\CommandBase.h" />
+    <ClInclude Include="Engine\CryingEngine.h" />
+    <ClInclude Include="User\DemoScene.h" />
+    <ClInclude Include="Engine\Drawable.h" />
+    <ClInclude Include="Engine\DrawableManager.h" />
+    <ClInclude Include="Engine\DrawDeregistrationCommand.h" />
+    <ClInclude Include="Engine\DrawRegistrationCommand.h" />
+    <ClInclude Include="Engine\EnumEventType.h" />
+    <ClInclude Include="Engine\EnumRegistrationState.h" />
+    <ClInclude Include="Engine\FreezeTime.h" />
+    <ClInclude Include="User\Frigate.h" />
+    <ClInclude Include="Engine\GameObject.h" />
+    <ClInclude Include="Engine\GameObjectEntryCommand.h" />
+    <ClInclude Include="Engine\GameObjectExitCommand.h" />
+    <ClInclude Include="Engine\GodCamera.h" />
+    <ClInclude Include="Engine\MathTools.h" />
+    <ClInclude Include="Engine\Inputable.h" />
+    <ClInclude Include="Engine\KeyEventDeregistrationCommand.h" />
+    <ClInclude Include="Engine\InputableManager.h" />
+    <ClInclude Include="Engine\KeyEventRegistrationCommand.h" />
+    <ClInclude Include="Engine\KeyObject.h" />
+    <ClInclude Include="Engine\ModelManager.h" />
+    <ClInclude Include="User\Plane.h" />
+    <ClInclude Include="Engine\Scene.h" />
+    <ClInclude Include="Engine\SceneManager.h" />
+    <ClInclude Include="Engine\NullScene.h" />
+    <ClInclude Include="Engine\SceneRegistrationBroker.h" />
+    <ClInclude Include="Engine\ShaderManager.h" />
+    <ClInclude Include="Engine\TextureManager.h" />
+    <ClInclude Include="Engine\TimeManager.h" />
+    <ClInclude Include="Engine\Updatable.h" />
+    <ClInclude Include="Engine\UpdatableManager.h" />
+    <ClInclude Include="Engine\UpdateDeregistrationCommand.h" />
+    <ClInclude Include="Engine\UpdateRegistrationCommand.h" />
+    <ClInclude Include="Engine\Visualizer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\File\lib\File_Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
